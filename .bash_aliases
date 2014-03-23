@@ -47,6 +47,7 @@ alias sudo='sudo '
 # git aliases
 alias gitc='git commit -a'
 alias gitp='git push'
+alias gitl='git log --graph --oneline --decorate'
 
 
 alias du='du -h --max-depth=1 | sort -hr'
