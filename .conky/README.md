@@ -20,5 +20,5 @@ It also needs your package list to be periodically updated, I have an entry for 
 conkyInfrastructure
 
 The getPortStatus.sh script has nmap as a dependency.
-Usage is getPortStatus.sh <IP-ADDR> <PORT>
+Usage is getPortStatus.sh IP-ADDR PORT
 If you specify 0 as the port the script will perform a simple ping test instead of an nmap scan.
