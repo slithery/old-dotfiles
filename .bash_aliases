@@ -44,6 +44,11 @@ alias sv='sudo vim'
 # sudo alias fix
 alias sudo='sudo '
 
+# git aliases
+alias gitc='git commit -a'
+alias gitp='git push'
+
+
 alias du='du -h --max-depth=1 | sort -hr'
 alias lsblk='lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL,UUID'
 alias rconk='pkill -9 conky && ~/.conky/runConky.sh > /dev/null & disown'
