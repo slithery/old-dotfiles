@@ -45,9 +45,11 @@ alias sv='sudo vim'
 alias sudo='sudo '
 
 # git aliases
+alias gita='git add '
 alias gitc='git commit -a'
 alias gitp='git push'
 alias gitl='git log --graph --oneline --decorate'
+alias gits='git status'
 
 
 alias du='du -h --max-depth=1 | sort -hr'
