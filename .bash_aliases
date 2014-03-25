@@ -12,7 +12,7 @@ alias ipl='get_iplayer && clear && get_iplayer --nocopyright'
 alias gipl='get_iplayer --nocopyright --output=/home/rob/Videos --tvmode=flashhd,flashvhigh,flashhigh,flashstd,flashnormal --get'
 
 # pacman aliases
-alias pacu='sudo pacman -Syyu'
+alias pacu='sudo pacman -Syu'
 alias paci='sudo pacman -S '
 alias pacr='sudo pacman -Rs '
 alias pacs='pacman -Ss '
