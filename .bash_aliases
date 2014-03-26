@@ -56,7 +56,7 @@ alias du='du -h --max-depth=1 | sort -hr'
 alias lsblk='lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL,UUID'
 alias rconk='pkill -9 conky && ~/.conky/runConky.sh > /dev/null & disown'
 alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
-
+alias fahlog='tail -n 150 -f /opt/fah/log.txt'
 
 # Add an "alert" alias for long running commands.  Use like so: 'sleep 10; alert'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
