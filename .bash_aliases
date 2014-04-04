@@ -51,6 +51,11 @@ alias gitp='git push'
 alias gitl='git log --graph --oneline --decorate'
 alias gits='git status'
 
+# systemd aliases
+alias sdenable='sudo systemctl enable'
+alias sddisable='sudo systemctl disable'
+alias journ='sudo journalctl'
+
 
 alias du='du -h --max-depth=1 | sort -hr'
 alias lsblk='lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL,UUID'
