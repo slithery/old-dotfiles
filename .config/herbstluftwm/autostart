@@ -3,7 +3,7 @@
 # this is a simple config for herbstluftwm
 
 hc() {
-    herbstclient "$@"
+    cmds="$cmds , $@"
 }
 
 hc emit_hook reload
@@ -152,6 +152,8 @@ herbstclient set tree_style '╾│ ├└╼─┐'
 # hc set_monitors 1280x1024+0+0 1280x1024+1280+0
 # or simply:
 # hc detect_monitors
+
+herbstclient chain $cmds&
 
 # find the panel
 panel=~/.config/herbstluftwm/panel.sh
