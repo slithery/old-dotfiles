@@ -1,0 +1,22 @@
+URxvt.scrollBar: false
+URxvt.depth: 32
+URxvt.background: [80]#000000
+URxvt.foreground: #c5c8c6
+URxvt.font: xft:Ubuntu Mono:size=9
+
+URxvt.color0:  #000000
+URxvt.color1:  #cc6666
+URxvt.color2:  #b5bd68
+URxvt.color3:  #f0c674
+URxvt.color4:  #81a2be
+URxvt.color5:  #b294bb
+URxvt.color6:  #8abeb7
+URxvt.color7:  #fffefe
+URxvt.color8:  #000000
+URxvt.color9:  #cc6666
+URxvt.color10: #b5bd68
+URxvt.color11: #f0c674
+URxvt.color12: #81a2be
+URxvt.color13: #b294bb
+URxvt.color14: #8abeb7
+URxvt.color15: #fffefe
