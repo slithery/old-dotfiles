@@ -155,5 +155,6 @@ herbstclient set tree_style '╾│ ├└╼─┐'
 
 herbstclient chain $cmds&
 
+setxkbmap -layout gb
 compton -b
 sh ~/.fehbg & 
