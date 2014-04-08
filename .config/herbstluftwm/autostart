@@ -154,3 +154,5 @@ herbstclient set tree_style '╾│ ├└╼─┐'
 # hc detect_monitors
 
 herbstclient chain $cmds&
+
+compton -b
