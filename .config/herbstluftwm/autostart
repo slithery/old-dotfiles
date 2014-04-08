@@ -156,3 +156,4 @@ herbstclient set tree_style '╾│ ├└╼─┐'
 herbstclient chain $cmds&
 
 compton -b
+sh ~/.fehbg & 
