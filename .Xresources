@@ -1,9 +1,18 @@
+! -- Xft settings -- !
+Xft.dpi: 96
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+
+! -- URxvt settings -- !
 URxvt.scrollBar: false
 URxvt.depth: 32
 URxvt.background: [80]#000000
 URxvt.foreground: #c5c8c6
 URxvt.font: xft:Ubuntu Mono:size=9
-
 URxvt.color0:  #000000
 URxvt.color1:  #cc6666
 URxvt.color2:  #b5bd68

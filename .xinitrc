@@ -17,5 +17,8 @@ fi
 # Activate numlock
 numlockx &
 
+# Polkit
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
 #Launch WM
 exec herbstluftwm
