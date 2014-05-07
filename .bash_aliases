@@ -9,7 +9,7 @@ alias ....='cd ../../..'
 
 # get_iplayer aliases
 alias ipl='get_iplayer && clear && get_iplayer --nocopyright'
-alias gipl='get_iplayer --nocopyright --output=/home/rob/Videos --tvmode=flashhd,flashvhigh,flashhigh,flashstd,flashnormal --get'
+alias gipl='get_iplayer --nocopyright --output=/home/rob/videos --tvmode=flashhd,flashvhigh,flashhigh,flashstd,flashnormal --get'
 
 # pacman aliases
 alias pacu='sudo pacman -Syu'
@@ -59,6 +59,7 @@ alias journ='sudo journalctl -b -f'
 alias du='du -h --max-depth=1 | sort -hr'
 alias lsblk='lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL,UUID'
 alias rconk='pkill -9 conky && ~/.conky/runConky.sh > /dev/null & disown'
+alias mps='/home/rob/mps/mps'
 
 # Add an "alert" alias for long running commands.  Use like so: 'sleep 10; alert'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
