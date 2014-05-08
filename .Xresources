@@ -12,7 +12,7 @@ URxvt.scrollBar: false
 URxvt.depth: 32
 URxvt.background: [80]#000000
 URxvt.foreground: #c5c8c6
-URxvt.font: xft:Ubuntu Mono:size=9
+URxvt.font: xft:Ubuntu Mono:size=10
 URxvt.color0:  #000000
 URxvt.color1:  #cc6666
 URxvt.color2:  #b5bd68

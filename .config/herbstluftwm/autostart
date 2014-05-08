@@ -2,9 +2,10 @@
 
 # this is a simple config for herbstluftwm
 
-setxkbmap -layout gb
 feh --bg-fill ~/.config/wallpapers/taxus.png &
-compton -b
+compton -b --config ~/.config/compton.conf
+setxkbmap -layout gb
+numlockx &
 
 hc() {
     cmds="$cmds , $@"
@@ -176,3 +177,6 @@ for monitor in $(herbstclient list_monitors | cut -d: -f1) ; do
 done
 
 ~/.config/herbstluftwm/loadstate.sh < ~/.config/herbstluftwm/state
+
+# conky
+~/.config/conky/runconky.sh

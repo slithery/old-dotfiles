@@ -58,7 +58,7 @@ alias journ='sudo journalctl -b -f'
 # misc aliases
 alias du='du -h --max-depth=1 | sort -hr'
 alias lsblk='lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL,UUID'
-alias rconk='pkill -9 conky && ~/.conky/runConky.sh > /dev/null & disown'
+alias rconk='pkill -9 conky && ~/.config/conky/runconky.sh > /dev/null & disown'
 alias mps='/home/rob/mps/mps'
 
 # Add an "alert" alias for long running commands.  Use like so: 'sleep 10; alert'
