@@ -75,3 +75,5 @@ set mouse=a         " Enable the use of the mouse.
  
 filetype plugin indent on
 syntax on
+"colorscheme solarized
+

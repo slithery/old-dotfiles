@@ -10,14 +10,21 @@ alias ....='cd ../../..'
 # get_iplayer aliases
 alias ipl='get_iplayer && clear && get_iplayer --nocopyright'
 alias gipl='get_iplayer --nocopyright --output=/home/rob/videos --tvmode=flashhd,flashvhigh,flashhigh,flashstd,flashnormal --get'
+alias yt='youtube-dl --max-quality url'
 
 # pacman aliases
 alias pacu='sudo pacman -Syu'
-alias paci='sudo pacman -S '
-alias pacr='sudo pacman -Rs '
-alias pacs='pacman -Ss '
+alias paci='sudo pacman -S'
+alias pacr='sudo pacman -Rs'
+alias pacs='pacman -Ss'
 
-# systemd power aliases
+# systemd aliases
+
+alias sc='systemctl'
+alias ssc='sudo systemctl'
+alias scu='systemctl --user'
+alias jc='sudo journalctl'
+alias journ='sudo journalctl -b -f'
 alias shutdown='systemctl poweroff'
 alias reboot='systemctl reboot'
 alias suspend='systemctl suspend'
@@ -51,18 +58,16 @@ alias gitp='git push'
 alias gitl='git log --graph --oneline --decorate'
 alias gits='git status'
 
-# systemd aliases
-alias sc='sudo systemctl'
-alias journ='sudo journalctl -b -f'
 
 # misc aliases
 alias du='du -h --max-depth=1 | sort -hr'
 alias lsblk='lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL,UUID'
 alias rconk='pkill -9 conky && ~/.config/conky/runconky.sh > /dev/null & disown'
 alias mps='/home/rob/mps/mps'
-
-# Add an "alert" alias for long running commands.  Use like so: 'sleep 10; alert'
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias hc='herbstclient'
+alias xxx='mpv --shuffle --loop=inf ~/videos/.new/*'
+alias hc='herbstclient'
+alias rt='urxvtc -e tmux attach -t rt'
 
 
 # Functions
