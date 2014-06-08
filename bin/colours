@@ -21,9 +21,6 @@ set_colours() {
 }
 set_colours
 
-# Clear screen
-clear
-
 # Pacman gfx
 cat << EOF
 
