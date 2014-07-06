@@ -1,6 +1,6 @@
-##############################
-# Bash aliases and functions #
-##############################
+################
+# Bash aliases #
+################
 
 # cd aliases
 alias ..='cd ..'
@@ -68,18 +68,3 @@ alias hc='herbstclient'
 alias xxx='mpv --shuffle --loop=inf ~/videos/.new/*'
 alias hc='herbstclient'
 alias rt='urxvtc -e tmux attach -t rt'
-
-
-# Functions
-
-fah () {
-    systemctl status foldingathome > /dev/null
-    if [ $? == 0 ]; then
-      echo "Stopping F@H"
-      sudo systemctl stop foldingathome
-    else
-      echo "Starting F@H"
-      sudo systemctl start foldingathome
-    fi
-}
-
