@@ -67,8 +67,8 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 # Add ~/bin to path
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
+if [ -d "/home/rob/bin" ] ; then
+    PATH="/home/rob/bin:$PATH"
 fi
 
 # Set editor

@@ -7,10 +7,11 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
-# get_iplayer aliases
+# media download aliases
 alias ipl='get_iplayer && clear && get_iplayer --nocopyright'
 alias gipl='get_iplayer --nocopyright --output=/home/rob/videos --tvmode=flashhd,flashvhigh,flashhigh,flashstd,flashnormal --get'
 alias yt='youtube-dl --max-quality url'
+alias mps='/home/rob/mps/mps'
 
 # pacman aliases
 alias pacu='sudo pacman -Syu'
@@ -19,7 +20,6 @@ alias pacr='sudo pacman -Rs'
 alias pacs='pacman -Ss'
 
 # systemd aliases
-
 alias sc='systemctl'
 alias ssc='sudo systemctl'
 alias scu='systemctl --user'
@@ -46,7 +46,7 @@ alias vdir='vdir --color=auto'
 
 # vi aliases
 alias vi='vim'
-alias sv='sudo vim'
+alias sv='sudoedit'
 
 # sudo alias fix
 alias sudo='sudo '
@@ -63,8 +63,8 @@ alias gits='git status'
 alias du='du -h --max-depth=1 | sort -hr'
 alias lsblk='lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL,UUID'
 alias rconk='pkill -9 conky && ~/.config/conky/runconky.sh > /dev/null & disown'
-alias mps='/home/rob/mps/mps'
 alias hc='herbstclient'
 alias xxx='mpv --shuffle --loop=inf ~/videos/.new/*'
-alias hc='herbstclient'
 alias rt='urxvtc -e tmux attach -t rt'
+alias black='ssh -p 22222 black.slithery.it'
+alias strip="awk '!/^ *#/ && NF'"

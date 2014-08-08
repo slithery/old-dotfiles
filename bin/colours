@@ -41,7 +41,7 @@ cat << EOF
 EOF
 
 # Screenfetch
-screenfetch
+screenfetch -t
 
 # Space invaders gfx
 cat << EOF
