@@ -67,4 +67,4 @@ alias hc='herbstclient'
 alias xxx='mpv --shuffle --loop=inf ~/videos/.new/*'
 alias rt='urxvt -e tmux attach -t rt'
 alias black='ssh -p 22222 black.slithery.it'
-alias strip="awk '!/^ *#/ && NF'"
+alias strip-comments="awk '!/^ *#/ && NF'"

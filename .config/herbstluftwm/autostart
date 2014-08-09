@@ -21,7 +21,7 @@ hc keybind $Mod-Shift-c close
 # custom keybindings
 hc keybind $Mod-Shift-x spawn dm-tool lock
 hc keybind $Mod-Return spawn urxvt
-hc keybind $Mod-d spawn dmenu_run -q -h 16 -fn "Ubuntu Mono-9" -nb black -nf white
+hc keybind $Mod-d spawn dmenu_run -q -h 16 -fn "Ubuntu Mono-10" -nb black -nf white
 hc keybind XF86AudioPlay spawn mpc toggle
 hc keybind XF86AudioMute spawn amixer set Master toggle
 hc keybind XF86AudioRaiseVolume spawn amixer -D pulse set Master 5%+ unmute
