@@ -65,6 +65,7 @@ alias lsblk='lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL,UUID'
 alias rconk='pkill -9 conky && ~/.config/conky/runconky.sh > /dev/null & disown'
 alias hc='herbstclient'
 alias xxx='mpv --shuffle --loop=inf ~/videos/.new/*'
-alias rt='urxvt -e tmux attach -t rt'
+alias rt='urxvt -e tmux attach -t rt & disown'
+alias rt-pd='urxvt -e tmux attach -t rt-pd & disown'
 alias black='ssh -p 22222 black.slithery.it'
 alias strip-comments="awk '!/^ *#/ && NF'"

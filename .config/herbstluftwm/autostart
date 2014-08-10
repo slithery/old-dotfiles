@@ -1,7 +1,7 @@
 #!/bin/bash
 
 hc() {
-    cmds="$cmds , $@"
+    cmd+=( , "$@" )
 }
 
 hc emit_hook reload
@@ -158,7 +158,7 @@ herbstclient set tree_style '╾│ ├└╼─┐'
 # or simply:
 # hc detect_monitors
 
-herbstclient chain $cmds&
+herbstclient chain "${cmd[@]}"
 
 # find the panel
 
