@@ -22,7 +22,7 @@ fah () {
 #
 
 ngensite () {
-    sudo ln -s /etc/nginx/sites/available/"$1" /etc/nginx/sites-enabled/"$1"
+    sudo ln -s /etc/nginx/sites-available/"$1" /etc/nginx/sites-enabled/"$1"
     sudo systemctl reload nginx
 }
 
