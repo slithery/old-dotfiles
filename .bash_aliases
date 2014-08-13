@@ -2,24 +2,28 @@
 # Bash aliases #
 ################
 
-# cd aliases
+# cd
+#
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
-# media download aliases
+# media download
+#
 alias ipl='get_iplayer && clear && get_iplayer --nocopyright'
 alias gipl='get_iplayer --nocopyright --output=/home/rob/videos --tvmode=flashhd,flashvhigh,flashhigh,flashstd,flashnormal --get'
 alias yt='youtube-dl --max-quality url'
 alias mps='/home/rob/mps/mps'
 
-# pacman aliases
+# pacman
+#
 alias pacu='sudo pacman -Syu'
 alias paci='sudo pacman -S'
 alias pacr='sudo pacman -Rs'
 alias pacs='pacman -Ss'
 
-# systemd aliases
+# systemd
+#
 alias sc='systemctl'
 alias ssc='sudo systemctl'
 alias scu='systemctl --user'
@@ -29,14 +33,16 @@ alias shutdown='systemctl poweroff'
 alias reboot='systemctl reboot'
 alias suspend='systemctl suspend'
 
-# grep aliases
+# grep
+#
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias pg='ps -Af | grep $1'
 alias hist='history | grep'
 
-# ls aliases
+# ls
+#
 alias ls='ls -lh --color=auto'
 alias ll='ls -alF'
 alias la='ls -A'
@@ -44,22 +50,22 @@ alias l='ls -CF'
 alias dir='dir --color=auto'
 alias vdir='vdir --color=auto'
 
-# vi aliases
+# vi
+#
 alias vi='vim'
 alias sv='sudoedit'
 
-# sudo alias fix
+# sudo fix
 alias sudo='sudo '
 
-# git aliases
+# git
 alias gita='git add '
 alias gitc='git commit -a'
 alias gitp='git push'
 alias gitl='git log --graph --oneline --decorate'
 alias gits='git status'
 
-
-# misc aliases
+# misc
 alias du='du -h --max-depth=1 | sort -hr'
 alias lsblk='lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL,UUID'
 alias rconk='pkill -9 conky && ~/.config/conky/runconky.sh > /dev/null & disown'
@@ -68,7 +74,7 @@ alias z='mpv --shuffle --loop=inf ~/videos/.old/*'
 alias rt='urxvt -e tmux attach -t rt & disown'
 alias rt-pd='urxvt -e tmux attach -t rt-pd & disown'
 alias black='ssh -p 22222 black.slithery.it'
-alias strip-comments="awk '!/^ *#/ && NF'"
+alias strc="awk '!/^ *#/ && NF'"
 
 
 ##################
@@ -90,16 +96,3 @@ fah () {
 }
 
 
-
-# Enable / disable nginx websites.
-#
-
-ngensite () {
-    sudo ln -s /etc/nginx/sites-available/"$1" /etc/nginx/sites-enabled/"$1"
-    sudo systemctl reload nginx
-}
-
-ngdissite () {
-    sudo rm /etc/nginx/sites-enabled/"$1"
-    sudo systemctl reload nginx
-}
