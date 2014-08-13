@@ -79,3 +79,6 @@ export MANPAGER=most
 
 # Dont display ^C
 stty -ctlecho
+
+# Command not found hook (requires pkgfile)
+source /usr/share/doc/pkgfile/command-not-found.bash
