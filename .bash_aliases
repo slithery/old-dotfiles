@@ -69,3 +69,37 @@ alias rt='urxvt -e tmux attach -t rt & disown'
 alias rt-pd='urxvt -e tmux attach -t rt-pd & disown'
 alias black='ssh -p 22222 black.slithery.it'
 alias strip-comments="awk '!/^ *#/ && NF'"
+
+
+##################
+# Bash functions #
+##################
+
+# Toggle foldingathome.service status.
+#
+
+fah () {
+    systemctl status foldingathome > /dev/null
+    if [ $? == 0 ]; then
+      echo "Stopping F@H"
+      sudo systemctl stop foldingathome
+    else
+      echo "Starting F@H"
+      sudo systemctl start foldingathome
+    fi
+}
+
+
+
+# Enable / disable nginx websites.
+#
+
+ngensite () {
+    sudo ln -s /etc/nginx/sites-available/"$1" /etc/nginx/sites-enabled/"$1"
+    sudo systemctl reload nginx
+}
+
+ngdissite () {
+    sudo rm /etc/nginx/sites-enabled/"$1"
+    sudo systemctl reload nginx
+}
