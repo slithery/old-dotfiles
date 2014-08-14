@@ -56,19 +56,14 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-# Source ~/.bash_functions
-if [ -f ~/.bash_functions ]; then
-    . ~/.bash_functions
-fi
-
 # Enable programmable completion features
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
 # Add ~/bin to path
-if [ -d "/home/rob/bin" ] ; then
-    PATH="/home/rob/bin:$PATH"
+if [ -d "~/bin" ] ; then
+    PATH="~/bin:$PATH"
 fi
 
 # Set editor

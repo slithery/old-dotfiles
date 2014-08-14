@@ -20,7 +20,7 @@ alias mps='/home/rob/mps/mps'
 alias pacu='sudo pacman -Syu'
 alias paci='sudo pacman -S'
 alias pacr='sudo pacman -Rs'
-alias pacs='pacman -Ss'
+alias pacs='yaourt'
 
 # systemd
 #
@@ -81,7 +81,7 @@ alias strc="awk '!/^ *#/ && NF'"
 # Bash functions #
 ##################
 
-# Toggle foldingathome.service status.
+# Toggle foldingathome.service
 #
 
 fah () {
@@ -94,5 +94,9 @@ fah () {
       sudo systemctl start foldingathome
     fi
 }
+
+
+# get_iplayer
+#
 
 
