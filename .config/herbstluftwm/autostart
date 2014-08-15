@@ -20,9 +20,8 @@ hc keybind $Mod-Shift-c close
 
 # custom keybindings
 hc keybind $Mod-x spawn ~/.config/herbstluftwm/power_menu.sh
-hc keybind $Mod-Shift-x spawn dm-tool lock
 hc keybind $Mod-Return spawn urxvt
-hc keybind $Mod-d spawn dmenu_run -q -h 16 -fn "Ubuntu Mono-10" -nb black -nf white -sb white -sf black
+hc keybind $Mod-d spawn dmenu_run -q -h 30 -fn "Ubuntu Mono-11" -x 140 -y 369 -w 1000 -nb black -nf white -sb white -sf black
 hc keybind XF86AudioPlay spawn mpc toggle
 hc keybind XF86AudioMute spawn amixer set Master toggle
 hc keybind XF86AudioRaiseVolume spawn amixer -D pulse set Master 5%+ unmute
@@ -164,6 +163,17 @@ herbstclient chain "${cmd[@]}"
 # find the panel
 
 ~/.config/herbstluftwm/panel.sh
+
+# restore state
+#
+
+while read line ; do
+    tag="${line%%: *}"
+    tree="${line#*: }"
+    hc add "$tag"
+    hc load "$tag" "$tree"
+done 
+
 
 ~/.config/herbstluftwm/loadstate.sh < ~/.config/herbstluftwm/state
 

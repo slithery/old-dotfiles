@@ -14,6 +14,6 @@ fi
 setxkbmap -layout gb
 numlockx on
 compton -b --config ~/.config/compton.conf
-feh --bg-fill ~/.config/wallpapers/taxus.png
+feh --bg-fill ~/.config/wallpapers/wallpaper
 xrdb ~/.config/Xresources
 exec herbstluftwm --locked

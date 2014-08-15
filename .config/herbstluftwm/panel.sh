@@ -11,8 +11,8 @@ fi
 x=${geometry[0]}
 y=${geometry[1]}
 panel_width=${geometry[2]}
-panel_height=16
-font="-*-ubuntu mono-*-*-*-*-*-100-*-*-*-*-*-*"
+panel_height=20
+font="-*-ubuntu mono-*-*-*-*-*-110-*-*-*-*-*-*"
 bgcolor=$(hc get frame_border_normal_color)
 selbg=$(hc get window_border_active_color)
 selfg='#101010'
