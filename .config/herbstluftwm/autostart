@@ -19,9 +19,10 @@ hc keybind $Mod-Shift-r reload
 hc keybind $Mod-Shift-c close
 
 # custom keybindings
+hc keybind $Mod-x spawn ~/.config/herbstluftwm/power_menu.sh
 hc keybind $Mod-Shift-x spawn dm-tool lock
 hc keybind $Mod-Return spawn urxvt
-hc keybind $Mod-d spawn dmenu_run -q -h 16 -fn "Ubuntu Mono-10" -nb black -nf white -sb \#9fbc00
+hc keybind $Mod-d spawn dmenu_run -q -h 16 -fn "Ubuntu Mono-10" -nb black -nf white -sb white -sf black
 hc keybind XF86AudioPlay spawn mpc toggle
 hc keybind XF86AudioMute spawn amixer set Master toggle
 hc keybind XF86AudioRaiseVolume spawn amixer -D pulse set Master 5%+ unmute

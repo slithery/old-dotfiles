@@ -62,8 +62,8 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 # Add ~/bin to path
-if [ -d "~/bin" ] ; then
-    PATH="~/bin:$PATH"
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
 fi
 
 # Set editor
@@ -74,6 +74,10 @@ export MANPAGER=most
 
 # Set vimrc's location and source it on vim startup
 export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
+
+# Set XDG dirs
+export XDG_CONFIG_HOME=~/.config/
+export XDG_CACHE_HOME=~/.cache/
 
 # Dont display ^C
 stty -ctlecho
