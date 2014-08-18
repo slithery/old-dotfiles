@@ -72,12 +72,12 @@ export EDITOR="vim"
 # Use most for colourised man pages
 export MANPAGER=most
 
-# Set vimrc's location and source it on vim startup
-export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
-
 # Set XDG dirs
 export XDG_CONFIG_HOME=~/.config/
 export XDG_CACHE_HOME=~/.cache/
+
+# Set vimrc's location and source it on vim startup
+export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
 
 # Dont display ^C
 stty -ctlecho

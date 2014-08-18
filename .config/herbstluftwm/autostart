@@ -1,5 +1,21 @@
 #!/bin/bash
 
+slock &
+setxkbmap -layout gb
+numlockx on
+xautolock -time 10 -locker slock &
+
+# Kill any UI processes we're about to run
+#
+for i in compton conky; do
+    if pgrep $i &> /dev/null; then pkill $i; fi
+done
+
+# Compton
+#
+compton -b --config ~/.config/compton.conf
+
+
 hc() {
     cmd+=( , "$@" )
 }
@@ -19,6 +35,7 @@ hc keybind $Mod-Shift-r reload
 hc keybind $Mod-Shift-c close
 
 # custom keybindings
+hc keybind $Mod-Shift-l spawn slock
 hc keybind $Mod-x spawn ~/.config/herbstluftwm/power_menu.sh
 hc keybind $Mod-Return spawn urxvt
 hc keybind $Mod-d spawn dmenu_run -q -h 30 -fn "Ubuntu Mono-11" -x 140 -y 369 -w 1000 -nb black -nf white -sb white -sf black
@@ -118,7 +135,7 @@ hc set frame_bg_transparent 1
 hc set frame_transparent_width 5
 hc set frame_gap 10
 
-hc attr theme.active.color '#9fbc00'
+hc attr theme.active.color '#FFFFFF'
 hc attr theme.normal.color '#454545'
 hc attr theme.urgent.color orange
 hc attr theme.inner_width 0
