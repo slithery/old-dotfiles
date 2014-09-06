@@ -20,7 +20,8 @@ alias mps='/home/rob/mps/mps'
 alias pacu='sudo pacman -Syu'
 alias paci='sudo pacman -S'
 alias pacr='sudo pacman -Rs'
-alias pacs='yaourt'
+alias pacrf='sudo pacman -Rns'
+alias pacs='pacman -Ss'
 
 # systemd
 #
@@ -96,7 +97,22 @@ fah () {
 }
 
 
-# get_iplayer
+# Package list
 #
 
-
+packages () {
+	cat <<-EOF
+	
+	# Repository packages
+	#
+	
+	$(comm -23 <(comm -23 <(pacman -Qeq|sort) <(pacman -Qgq base base-devel|sort)) <(pacman -Qqm|sort))
+	
+	
+	# AUR packages
+	#
+	
+	$(pacman -Qqm)
+	
+EOF
+}
